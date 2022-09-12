@@ -24,7 +24,7 @@ def gravar():
   if nome and email and senha:
     conn = mysql.connect()
     cursor = conn.cursor()
-    cursor.execute('insert into tbl_user (user_nome, user_cpf, user_endereco) VALUES (%s, %s, %s)', (nome, cpf, endereco))
+    cursor.execute('insert into tbl_user (user_name, user_cpf, user_endereco) VALUES (%s, %s, %s)', (nome, cpf, endereco))
     conn.commit()
   return render_template('mvc.html')
 
@@ -33,7 +33,7 @@ def gravar():
 def listar():
   conn = mysql.connect()
   cursor = conn.cursor() #abre uma seção dentro da conexão
-  cursor.execute('select user_nome, user_cpf, user_endereco alunos_ac1')
+  cursor.execute('select user_name, user_cpf, user_endereco alunos_ac1')
   data = cursor.fetchall() #recuperar registros
   conn.commit()
   return render_template('lista.html', datas=data)
