@@ -1,4 +1,4 @@
-Passo a passo para realização da atividade:
+# h1 Passo a passo para realização da atividade:
 
 git clone https://github.com/marcellass/ac1
 
@@ -9,6 +9,8 @@ docker run --name mysql5 -e MYSQL_ROOT_PASSWORD=mudar123 -p 3307:3307 -d mysql:5
 docker exec -it <ip do container> /bin/bash
 
 
+  
+  
 **Dentro da images:**
 
 create schema alunos;
@@ -24,3 +26,5 @@ pip install flask
 pip install flask-mysql
 
 python3 mvc.py
+  
+  
