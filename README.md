@@ -1,4 +1,4 @@
-# h1 Passo a passo para realização da atividade:
+# Passo a passo para realização da atividade:
 
 git clone https://github.com/marcellass/ac1
 
