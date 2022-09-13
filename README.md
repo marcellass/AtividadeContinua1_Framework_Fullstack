@@ -16,10 +16,14 @@ pip install flask-mysql
 
 python3 mvc.py
   
-  
+# USANDO DOCKERFILE:
+  docker image build -t python-web .
+  docker run -p 8888:8888 -d python-web
   
   
 **Dentro da imagem:**
+ 
+mysql -uroot -p
 
 create schema alunos;
 
