@@ -18,6 +18,8 @@ python3 mvc.py
   
 # Usando Dockerfile:
   docker image build -t python-web .
+  
+  
   docker run -p 8888:8888 -d python-web
   
   
