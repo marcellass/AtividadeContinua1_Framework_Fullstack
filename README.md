@@ -1,6 +1,6 @@
 # Passo a passo para realização da atividade:
 
-git clone https://github.com/marcellass/ac1
+git clone https://github.com/marcellass/AtividadeContinua_Framework_Fullstack/tree/main
 
 docker pull mysql:5.7
 
