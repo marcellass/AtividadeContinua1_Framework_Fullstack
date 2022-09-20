@@ -15,6 +15,11 @@ pip install flask
 pip install flask-mysql
 
 python3 mvc.py
+
+#Usando docker-compose:
+docker-compose up -d
+docker-compose stop
+docker-compose start 
   
 # Usando Dockerfile:
   docker image build -t python-web .
